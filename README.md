@@ -7,3 +7,8 @@ Steps will be:
 5. Configure Azure Container App 
 6. Enable CI/CD to build on a push to the GitHub repo
 7. Review and update revisions.
+
+---
+az group create --name qzhaodemo --location eastus    
+az acr create --name qzhaodemo --resource-group qzhaodemo --sku Standard --admin-enabled
+az ad sp create-for-rbac --name demoappqzhao01 --role contributor
